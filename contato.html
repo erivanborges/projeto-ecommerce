@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Projeto E-Commerce</title>
+    <link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/apprest.css">
+
+    <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
+    <script src="vendor/semantic/semantic.min.js"></script>
+</head>
+<body>
+    <!-- Menu Lateral -->
+    <div class="ui vertical inverted sidebar menu">
+        <a class="item" href="index.html">Home</a>
+        <a class="item" href="produto.html">Produtos</a>
+        <a class="active item" href="contato.html">Contato</a>
+
+        <a class="item" href="login.html">Login</a>
+        <a class="item" href="cadastro.html">Cadastre-se</a>
+    </div>
+
+    <!-- Conteudo da pagina -->
+    <div class="pusher">
+        <div class="ui inverted vertical masthead center aligned segment">
+            <div class="ui container">
+                <div class="ui large secondary pointing menu">
+                    <a class="toc item">
+                        <i class="sidebar icon"></i>
+                    </a>
+                    <a class="item" href="index.html">Home</a>
+                    <a class="item" href="produto.html">Produtos</a>
+                    <a class="active item" href="contato.html">Contato</a>
+                    <div class="right item">
+                        <a class="ui secondary basic button info-modal-link" href="login.html">Login</a>
+                        <a class="ui secondary basic button info-modal-link" href="cadastro.html">Cadastre-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="eight wide column">
+                        <form class="ui form">
+                            <div class="field">
+                                <label>Nome</label>
+                                <input type="text" name="firstname" placeholder="Nome">
+                            </div>
+                            <div class="field">
+                                <label>Sobrenome</label>
+                                <input type="text" name="lastname" placeholder="Sobrenome">
+                            </div>
+                            <div class="field">
+                                <label>E-mail</label>
+                                <input type="text" name="email" placeholder="E-mail">
+                            </div>
+                            <div class="field">
+                                <label>Mensagem</label>
+                                <textarea name="mensagem" placeholder="Mensagem"></textarea>
+                            </div>
+                            <div>
+                                <button class="ui button" type="submit">Enviar</button>
+                                <div class="ui error message"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
