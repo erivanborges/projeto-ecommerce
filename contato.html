@@ -101,6 +101,53 @@
         </div>
 
     </div>
+
+    <script>
+        $(document).ready(
+            function() {
+                $('.masthead').visibility({
+                    once: false,
+                    onBottomPassed: function() {
+                        $('.fixed.menu').transition('fade in');
+                    },
+                    onBottonPassedReverse: function() {
+                        $('.fixed.menu').transition('fade out');
+                    }
+                });
+
+                $('.ui.sidebar').sidebar('attach events', '.toc.item');
+            }
+        );
+    </script>
+
+    <script>
+        $('document').ready(
+            function() {
+                $('.ui.form').form({
+                    fields: {
+                        firstname: {
+                            identifier: 'firstname',
+                            rules: [
+                                {
+                                    type: 'empty',
+                                    prompt: 'O campo Nome é obrigatório.'
+                                }
+                            ]
+                        },
+                        lastname: {
+                            indentifier: 'lastname',
+                            rules: [
+                                {
+                                    type: 'empty',
+                                    prompt: 'O campo Sobrenome é obrigatório.'
+                                }
+                            ]
+                        }
+                    }
+                })
+            }
+        )
+    </script>
     
 </body>
 </html>
