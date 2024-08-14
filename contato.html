@@ -142,6 +142,19 @@
                                     prompt: 'O campo Sobrenome é obrigatório.'
                                 }
                             ]
+                        },
+                        email: {
+                            indentifier: 'email',
+                            rules: [
+                                {
+                                    type: 'empty',
+                                    prompt: 'O campo E-mail é obrigatório.'
+                                },
+                                {
+                                    type: 'email',
+                                    prompt: 'Por favor informe um e-mail válido.'
+                                }
+                             ]
                         }
                     }
                 })
