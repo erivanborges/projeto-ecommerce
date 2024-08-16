@@ -154,7 +154,16 @@
                                     type: 'email',
                                     prompt: 'Por favor informe um e-mail válido.'
                                 }
-                             ]
+                            ]
+                        },
+                        mensagem: {
+                            identifier: 'mensagem',
+                            rules: [
+                                {
+                                    type: 'empty',
+                                    prompt: 'O campo mensagem é o obrigatório.'
+                                }
+                            ]
                         }
                     }
                 })
