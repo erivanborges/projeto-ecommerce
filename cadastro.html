@@ -115,6 +115,7 @@
                                 </div>
                             </div>
                             <button class="ui button" type="submit">Salvar</button>
+                            <div class="ui error message"></div>
                         </form>
                     </div>
                 </div>
@@ -168,6 +169,29 @@
                 .sidebar('attach events', '.toc.item');
             }
         );
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.ui.form').form({
+                fields: {
+                    nomecompleto: {
+                        identifier: 'nomecompleto',
+                        rules: [{
+                            type: 'empty',
+                            prompt: 'O campo Nome Completo é obrigatorio.'
+                    }]
+                    },
+                    cpfcnpj: {
+                        identifier: 'cpfcnpj',
+                        rules: [{
+                            type: 'empty',
+                            prompt: 'O campo CPF / CNPJ é obrigatório.'
+                        }]
+                    }
+                }
+            });
+        });
     </script>
 
 </body>
