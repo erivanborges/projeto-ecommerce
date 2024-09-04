@@ -42,6 +42,41 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.ui.form').form({
+                fields: {
+                    login: {
+                        indentifier: 'login',
+                        rules: [
+                            {
+                                type: 'empty',
+                                prompt: 'O campo login não pode ser vazio.'
+                            },
+                            {
+                                type: 'email',
+                                prompt: 'O E-mail de login não é válido.'
+                            }
+                        ]
+                    },
+                    password: {
+                        indentifier: 'password',
+                        rules: [
+                            {
+                                type: 'empty',
+                                prompt: 'O campo senha não pode ser vazio.'
+                            },
+                            {
+                                type: 'length[8]',
+                                prompt: 'A sua senha deve conter no mínimo 8 caractéres.'
+                            }
+                        ]
+                    }
+                }
+            });
+        });
+    </script>
     
 </body>
 </html>
